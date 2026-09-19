@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÍA - Maternidad Inteligente Asistida</title>
+
+    <!-- Fuente Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Ruta al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Fondo decorativo -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <div class="app-card">
+        <!-- Encabezado Principal -->
+        <header class="header">
+            <div class="brand">
+                <div class="logo-badge">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="brand-info">
+                    <h1>MÍA</h1>
+                    <span class="tagline">Maternidad Asistida Inteligente</span>
+                </div>
+            </div>
+            <p class="slogan">"MÍA, tu compañera en cada etapa"</p>
+        </header>
+
+        <!-- Navegación por Pestañas -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'inicio')">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Inicio</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'funciones')">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Funciones</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'nosotros')">
+                <i class="fa-solid fa-users-rectangle"></i>
+                <span>Nosotros</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'contacto')">
+                <i class="fa-solid fa-comments"></i>
+                <span>Contacto</span>
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'aviso')">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>Aviso Médico</span>
+            </button>
+        </nav>
+
+        <!-- Contenedor Principal -->
+        <main class="content-body">
+
+            <!-- SECCIÓN 1: INICIO -->
+            <section id="inicio" class="tab-content active">
+                <div class="hero-grid">
+                    <div class="hero-info">
+                        <span class="pill-tag">Compañera Digital</span>
+                        <h2>Acompañamiento personalizado en tu embarazo y posparto</h2>
+                        <p>MÍA reúne información organizada, comprensible y respaldada por especialistas para guiarte en cada paso de tu maternidad.</p>
+                        <div class="cta-group">
+                            <button class="primary-btn" onclick="openTab(null, 'funciones')">
+                                Conoce la App <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="avatar-frame">
+                            <img src="img/mascota.png" alt="MÍA Robot Mascota">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: FUNCIONES -->
+            <section id="funciones" class="tab-content">
+                <div class="section-header">
+                    <h2>Lo que MÍA tiene para ti</h2>
+                    <p>Diseñada para darte tranquilidad y organización diaria.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-calendar-heart"></i>
+                        </div>
+                        <h3>Registro Prenatal</h3>
+                        <p>Seguimiento de semanas de gestación, registro de síntomas y recordatorios de tus próximas citas.</p>
+                    </div>
+
+                    <div class="feature-card highlighted">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                        </div>
+                        <h3>Sistema de Alertas</h3>
+                        <p>Orientación ante dudas frecuentes para saber cuándo es momento de consultar con tu profesional de salud.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-baby-carriage"></i>
+                        </div>
+                        <h3>Cuidados Posparto</h3>
+                        <p>Información clave para los primeros meses del bebé y el cuidado de la madre tras el parto.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: NOSOTROS (Basado en el Pitch) -->
+            <section id="nosotros" class="tab-content">
+                <div class="section-header">
+                    <h2>Conoce más sobre nosotros</h2>
+                    <p>Acompañando cada etapa, una pregunta a la vez.</p>
+                </div>
+                <div class="pitch-container">
+                    <div class="pitch-intro">
+                        <p>Durante el embarazo, la atención médica ocurre en el consultorio, pero las dudas reales surgen en el día a día en casa: <em>¿qué puedo comer?, ¿qué ejercicios son seguros?, ¿este cambio es normal?</em></p>
+                    </div>
+
+                    <div class="pitch-grid">
+                        <div class="pitch-card">
+                            <div class="pitch-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <h3>El Problema</h3>
+                            <p>Actualmente, cuando una madre busca respuestas en internet, encuentra información dispersa, contradictoria o no adaptada a la etapa específica de su embarazo.</p>
+                        </div>
+
+                        <div class="pitch-card">
+                            <div class="pitch-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <h3>Nuestra Solución</h3>
+                            <p>MÍA facilita este proceso reuniendo información relevante en un solo lugar, adaptándola exactamente a la etapa en la que se encuentra la madre.</p>
+                        </div>
+
+                        <div class="pitch-card full-width">
+                            <div class="pitch-icon"><i class="fa-solid fa-star"></i></div>
+                            <h3>Nuestro Valor Diferencial</h3>
+                            <p>No somos simplemente otra fuente de información sobre maternidad. Organizamos cada dato según la etapa que vive la madre y la ofrecemos de forma sencilla, accesible y respaldada por especialistas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: CONTACTO -->
+            <section id="contacto" class="tab-content">
+                <div class="section-header">
+                    <h2>¿Quieres saber más?</h2>
+                    <p>Estamos listos para resolver tus dudas sobre el proyecto MÍA.</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="mailto:miamaternidad@gmail.com" class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <span>miamaternidad@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <span>@mia.maternidad.sv</span>
+                        </div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <span>El Salvador</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: AVISO MÉDICO -->
+            <section id="aviso" class="tab-content">
+                <div class="disclaimer-card">
+                    <div class="disclaimer-header">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h3>Aviso Importante de Salud</h3>
+                    </div>
+                    <p>MÍA es una herramienta de <strong>apoyo y guía informativa</strong> para la maternidad.</p>
+                    <p class="disclaimer-highlight">No diagnostica ni sustituye la atención médica profesional.</p>
+                    <p class="subtext">Ante cualquier síntoma preocupante, malestar severo o emergencia, consulta inmediatamente a tu médico o acude a un centro de salud.</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Ruta al JS -->
+    <script src="js/scrip.js"></script>
+</body>
+</html>
